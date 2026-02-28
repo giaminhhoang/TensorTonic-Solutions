@@ -10,5 +10,5 @@ def matrix_trace(A):
 
     trA = 0.0
     for r in range(rows):
-        trA += A[r][r]
+        trA += A[r, r]
     return trA
