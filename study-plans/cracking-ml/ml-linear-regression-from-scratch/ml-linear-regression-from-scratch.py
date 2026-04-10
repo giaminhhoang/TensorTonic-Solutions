@@ -15,7 +15,7 @@ def linear_regression(X, y, lr, epochs):
         y_hat = X@w + b
         w -= lr * 2/n*X.T@(y_hat - y)
         b -= lr * 2/n*np.sum(y_hat-y)
-
-    weights = [round(float(v), 4) for v in w]
-    bias = round(float(b), 4)
-    return (weights, bias)
+    return w, b
+    # weights = [round(float(v), 4) for v in w]
+    # bias = round(float(b), 4)
+    # return (weights, bias)
