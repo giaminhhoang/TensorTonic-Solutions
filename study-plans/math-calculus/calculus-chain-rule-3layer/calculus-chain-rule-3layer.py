@@ -19,10 +19,10 @@ def chain_rule_3layer(w1, w2, w3, x):
     """
     Returns: dict with 'factors' (list of 6 floats), 'analytical_gradient' (float), 'numerical_gradient' (float)
     """
-    w1 = np.float64(w1)
-    w2 = np.float64(w2)
-    w3 = np.float64(w3)
-    x = np.float64(x)
+    # w1 = np.float64(w1)
+    # w2 = np.float64(w2)
+    # w3 = np.float64(w3)
+    # x = np.float64(x)
     z1, z2, z3, y = forward(w1, w2, w3, x)
     w1_grad = sigmoid_grad(z3)*w3*sigmoid_grad(z2)*w2*sigmoid_grad(z1)*x
 
